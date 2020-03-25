@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>showUsers</title>
+    <style>
+        .user {
+            cursor: pointer;
+            transition: .7s;
+        }
+
+        .user:hover {
+            color: #00ff00;
+        }
+
+        .div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .infoUser {
+            border: 1px solid black;
+            width: 30%;
+            text-align: center;
+            padding: 30px 0;
+            border-radius: 10px;
+            background-color: #cccccc;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+<form class="form">
+    <label for="name">Name</label>
+    <input type="text" id="name">
+
+    <label for="username">Username</label>
+    <input type="text" id="username">
+
+    <label for="email">Email</label>
+    <input type="text" id="email">
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone">
+
+    <input type="submit">
+
+    </form>
+<button class="button">Show me all users</button>
+<div class="div"></div>
+<div class="infoUser"></div>
+<script src="script.js"></script>
+</body>
+</html>
