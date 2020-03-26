@@ -33,11 +33,45 @@
             display: none;
         }
 
+        .form {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 30%;
+            border: 3px solid black;
+            padding: 20px;
+            align-items: center;
+            margin: 50px auto 30px;
+        }
+
+        .submit-btn {
+            border: 3px solid green;
+            margin-top: 30px;
+            width: 30%;
+            background-color: lightgoldenrodyellow;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            background-color: lightyellow;
+            border: 3px solid green;
+            border-radius: 5px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .button:hover, .submit-btn:hover {
+            background-color: aqua;
+        }
 
     </style>
 </head>
 <body>
 <form class="form">
+    <h3>Create user:</h3>
     <label for="name">Name</label>
     <input type="text" id="name">
 
@@ -50,7 +84,7 @@
     <label for="phone">Phone</label>
     <input type="text" id="phone">
 
-    <input type="submit">
+    <input class="submit-btn" type="submit">
 
     </form>
 <button class="button">Show me all users</button>
